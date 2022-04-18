@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies Online  About Us</title>
+	
+	<link rel="stylesheet" type="text/css" href="style1.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+</head>
+<body>
+
+<nav class="nav nav_top">
+		<div class="logo">
+			<a href="index.html"><img src="mo.png" width="150"></a>
+		</div>
+		<div class="nav_side">
+			<a href="about.html">About us</a>
+			<a href="services.html">Tv Shows</a>
+			<a href="blog.html">Reviews of  Movies</a>
+			<a href="contactus.html">Contact</a>
+			<a href=" ">Login/Register</a>
+		</div>
+	</nav>
+
+	<div class="about_us">
+		<h2>About Us</h2>
+		<div class="about_content">
+			<p>Streaming is real-time, and it's more efficient than downloading media files. If a video file is downloaded, a copy of the entire file is saved onto a device's hard drive, and the video cannot play until the entire file finishes downloading. If it's streamed instead, the browser plays the video without actually copying and saving it. The video loads a little bit at a time instead of the entire file loading at once, and the information that the browser loads is not saved locally.
+
+				Think of the difference between a lake and a stream: Both contain water, and a stream may contain just as much water as a lake; the difference is that with a stream, the water is not all in the same place at the same time. A downloaded video file is more like a lake, in that it takes up a lot of hard drive space (and it takes a long time to move a lake). Streaming video is more like a stream or a river, in that the video's data is continuously, rapidly flowing to the user's browser.</p>
+		
+<hr>
+
+		</div>
+		
+		<h2>Advantages </h2>
+		<p>Clear Sound and Picture
+			Unlike pirated sites, the video and audio quality of the movies are usually high. You will be streaming the videos in HD.
+			
+			Instant Viewing
+			You will get immediate access to the movies, even when you are on the road. Some platforms charge a flat monthly fee, and in return, you get full access to their programming.
+			
+			No Download Time
+			Streaming platforms have made it simpler for people to watch their favorite shows without worrying about download time. All you need is a stable internet connection for you to watch any show.
+			
+			No Need for Memory Space
+			Since there are no downloads involved, you don’t have to worry about running out of disk space or memory space. Downloading huge videos to your computer may take up vast spaces on your computer, which may affect the performances of your computer.
+			
+			Instant Playback
+			In the infant stage of the internet, there was a requirement for webmasters to include a link on their website if they wanted to share a video with their visitors. The visitors had to download the videos and watch them later on. However, video streaming has changed all this as you can get instant playback.
+			
+			Many Streaming Options
+			Streaming websites offer you a chance of choosing from their huge list of options. There are no limits as to how many videos you can watch in a day, as long as you have paid your subscription.
+			
+			 </p>
+	</div>
+
+<div class="feed">
+	<h2>Write a review</h2>
+	<div class="feed_form">
+		<form name="submit-googlesheet" method="post">
+			<input type="text" name="Name" placeholder="Name"><br>
+			<input type="email" name="Email Id" placeholder="Email ID"><br>
+			<input type="number" name="Number" placeholder="Contact Number"><br>
+			<textarea rows="5" cols="7" name="Review" placeholder="Write Your Review"></textarea><br>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</div>
+
+<footer>
+	<div class="footer_logo">
+		<a href="index.html"><img src="mo.png" width="150"></a>
+	</div>
+	<div class="pages">
+		<h3>Pages</h3>
+		<a href="about.html">About us</a>
+		<a href="services.html">Tv Shows</a>
+		<a href="blog.html">Reviews of Movies</a>
+		<a href="">Login</a>
+		<a href="">Sign Up</a>
+	</div>
+	<div class="doc">
+		<h3>Documents</h3>
+		<a href="">Privacy Policy</a>
+		<a href="">Terms Of Use</a>
+		<a href="">Refund Policy</a>
+	</div>
+	<div class="social">
+		<h3>Follow Us</h3>
+		<a href=""><i class="fab fa-facebook" ></i></a>
+		<a href="https://www.linkedin.com/in/arkaja-singh-2789071aa/" target="_black"><i class="fab fa-linkedin" ></i></a>
+		<a href="https://www.instagram.com/arkaja_singh__/" target="_black"><i class="fab fa-instagram"></i></a>
+		<a href=""><i class="fab fa-twitter"></i></a>
+	</div>
+	<div class="contact">
+		<h3>Contact Us</h3>
+		<a href="https://api.Whatsapp.com/send?phone=+919369277597" target="_black"><i class="fab fa-whatsapp"></i></a>
+		<a href="tel: +919369277597"><i class="fas fa-phone"></i></a>
+		<a href="mailto: arkajasingh13@gmail.com"><i class="far fa-envelope"></i></a>
+	</div>
+	<hr>
+	<p>Copyright &copy; 2021 Arkaja. All rights reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx-j_QHF4tpzjMRwMOoybk5R596UphiXtB5WlGskrGh5OhdzVDI5TpllNN7kjMoq_yD/exec'
+            const form = document.forms['submit-googlesheet']
+           
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thankyou Will get back to You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
